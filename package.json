@@ -1,16 +1,25 @@
 {
   "dependencies": {
     "call-of-duty-api": "^2.1.2",
-    "discord-akairo": "^8.1.0",
-    "discord.js": "^13.2.0"
+    "discord-akairo": "discord-akairo/discord-akairo",
+    "discord.js": "^13.0.0"
   },
   "name": "warzonediscordbot",
   "version": "0.0.0",
   "description": "🤖 A Call of Duty Warzone bot for Discord",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext=.js .",
+    "format": "prettier . --ignore-unknown --check",
+    "format:fix": "prettier . --ignore-unknown --write",
+    "lint:fix": "eslint --ext=.js . --fix"
   },
   "repository": {
     "type": "git",

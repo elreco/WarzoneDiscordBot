@@ -3,6 +3,7 @@
 </p>
 
 # Warzone Discord Bot
+
 <img src="https://img.shields.io/github/downloads/elreco/WarzoneDiscordBot/total" />
 
 An open source Discord Bot for Call of Duty Warzone, retrieve stats, weapons and much more
@@ -17,8 +18,8 @@ npm install
 
 ## Usage
 
-
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
