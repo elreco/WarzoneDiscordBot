@@ -9,7 +9,7 @@ An open source Discord Bot for Call of Duty Warzone, retrieve stats, weapons and
 
 ## Installation
 
-Use the package manager [npm](https://nodejs.org/en/download/) to install Warzone Discord Bot.
+Use Node.js [npm](https://nodejs.org/en/download/) to install Warzone Discord Bot.
 
 ```bash
 npm install
