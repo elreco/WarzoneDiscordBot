@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/42843594/136997605-e7b0e110-35c5-46b6-99aa-30d74504893c.png" />
+</p>
+
 # Warzone Discord Bot
 
 An open source Discord Bot for Call of Duty Warzone, retrieve stats, weapons and much more
