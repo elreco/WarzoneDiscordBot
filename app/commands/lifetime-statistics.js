@@ -5,15 +5,21 @@ class PingCommand extends Command {
     constructor() {
         super('stats', {
             aliases: ['stats'],
+            args: [
+                {
+                    id: 'player'
+                }
+            ]
         });
     }
 
-    async exec(message) {
+    async exec(message, args) {
         try {
-            let data = await API.MWmp(message)
+            let data = await API.MWwz(args.player, 'psn')
             console.log(data)
-            return message.reply(data);
+            return message.reply(data.username);
         } catch (Error) {
+            console.log(args.player)
             return message.reply(Error);
         }
     }

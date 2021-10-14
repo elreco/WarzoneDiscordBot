@@ -1,6 +1,7 @@
 const { AkairoClient, CommandHandler } = require('discord-akairo')
 const { Intents } = require('discord.js');
 const config = require('./config.js')
+const API = require('call-of-duty-api')();
 
 class MyClient extends AkairoClient {
   constructor() {
@@ -22,4 +23,13 @@ class MyClient extends AkairoClient {
 }
 
 const client = new MyClient()
-client.login(config.discordToken)
+
+API.login(config.codEmail, config.codPassword, config.captchaApiKey).then((output) => {
+  console.log(output);
+  client.login(config.discordToken)
+}).catch((err) => {
+   console.log(err);
+});
+
+
+
